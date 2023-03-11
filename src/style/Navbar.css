@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@800&display=swap');
+
+
+.navbar{
+   margin: 0; 
+}
+
+.navbar nav{
+   display: flex;
+   background-color: #4676E0;
+}
+
+.navbar nav section{
+   display: block;
+   position: relative;
+   margin-top: auto;
+   margin-bottom: auto;
+   width: 100px;
+}
+
+.navbar nav section p {
+   font-family: 'Dosis', sans-serif;
+   font-size: 0.9em;
+   text-transform: uppercase;
+
+}
+
+.navbar nav img{
+   padding-left: 10px;
+   padding-right: 5px;
+
+}
+
+.navbar nav ul{
+   display: flex;
+   list-style-type: none;
+   margin-left: auto;
+   padding-inline-start: 0;
+}
+
+.navbar nav ul li{
+   font-family: 'Rubik', sans-serif;
+   font-size: 1.2em;
+   text-transform: uppercase;
+   margin-top: auto;
+   margin-bottom: auto;
+   padding-left: 15px;
+   padding-right: 15px;
+   text-align: center;
+   color: white;
+   white-space: nowrap;
+}
+
+.navbar nav ul li:last-child{
+   padding-left: 25px;
+   font-size: 1.4em;
+}
+
+.wpp img{
+   height: 18px;
+   width: 18px;
+}
+
+.label-menu, .checkbox{
+   display: none;
+
+}
+
+@media(max-width: 870px){
+   .navbar nav ul{
+      display: block;
+      position: absolute;
+      top: 5.28rem;
+      left: 0;      
+      background-color: #4676E0;
+      width: 100vw;
+   }
+
+   .navbar nav ul li{
+      padding-top: 15px;
+      padding-bottom: 15px;
+      text-align: left;
+      color: white;
+   }
+
+   .label-menu{
+      display: flex;
+      align-items: center;
+      color: white;
+      padding-block: 1rem;
+      cursor: pointer;
+      margin-left: auto;
+      padding-right: 10px;
+   }
+
+   .hamburger{
+      border-top: 0.125rem solid;
+      width: 1.25rem;
+   }
+
+   .hamburger::before,
+   .hamburger::after{
+      content: " ";
+      display: block;
+      width: 1.25rem;
+      height: 0.125rem;
+      background: currentColor;
+      margin-top: 5px;
+   }
+
+   .navbar nav ul li:last-child{
+      padding-left: 5px;
+   }
+
+}
